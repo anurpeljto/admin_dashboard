@@ -7,13 +7,47 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
+span, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .part1{
     grid-column: 1;
-    padding: 0;
+    padding: 20px;
+    height: 100%;
+    background-color: #F49097;
+
+    display: grid;
+    grid-template-columns: 2em 0.5fr;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 0.16fr));
+    grid-auto-flow: row;
+    grid-auto-rows: repeat(auto-fit, minmax(30px, 0.16fr));
+    row-gap: 100px;
+    align-items: center;
+    justify-content: left;
+    column-gap: 10px;
+}
+
+.part1 > h2 {
+    color: #F2F5FF;
+}
+
+/* .part1{
+    grid-column: 1;
+    padding: 20px;
     margin: 0;
     height: 100%;
     background-color: #F49097;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 0.16fr;
+    grid-auto-flow: row;
+    grid-auto-rows: 0.166fr;
+    row-gap: 15px;
+    column-gap: 15px;
 }
+*/
 
 .part2 {
     grid-column: 2 / -1;
@@ -21,4 +55,73 @@ body {
     margin: 0;
     height: 100%;
     background-color: #F2F5FF;
+}
+
+
+
+.logo-grid > * {
+    background-color: #F2F5FF;
+}
+
+.logo-grid {
+    width: 2em;
+    height: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    align-self: center;
+}
+
+.box1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.box2 {
+    grid-column: 1;
+    grid-row: 3 / span 1;
+}
+
+.box3{
+    grid-column: 2;
+    grid-row: 1 / span 1;
+}
+
+.box4 {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+
+.sidebar-item{
+    color: #F2F5FF;
+    font-weight: 500;
+    font-size: 1.3em;
+    position: relative;
+    align-self: center;
+}
+
+#retarded{
+    vertical-align: top;
+}
+
+#retarded {
+    position: relative;
+    align-self: center;
+    padding-bottom: 8px;
+}
+
+.block2-container{
+    display: grid;
+    grid-template-columns: 2em 0.5fr;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.dashboard3{
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 2em 0.16fr;
+    grid-auto-flow: row;
+    gap: 10px;
 }
