@@ -132,7 +132,7 @@ span, h2 {
 .header {
     padding: 1em;
     display: grid;
-    grid-template-columns: 2em 2fr 0.2fr repeat(3, auto);
+    grid-template-columns: 2em 2fr repeat(3, auto);
     grid-template-rows: 1fr 1fr;
     align-items: center;
     gap: 20px;
@@ -151,5 +151,40 @@ span, h2 {
     background: rgb(244,144,151);
     background: linear-gradient(90deg, rgba(244,144,151,1) 0%, rgba(85,214,194,1) 100%); 
     border-radius: 15px;
+    justify-self: center;
 }
 
+.buttons{
+    display: grid;
+    height: 2rem;
+    width: 5rem;
+    background-color: #55d6c2;
+    border-radius: 10px;
+    justify-self: center;
+    justify-content: center;
+}
+
+#bell{
+    justify-self: right;
+}
+
+#lastbutton{
+    justify-self: left;
+    width: 100%;
+}
+
+#biggerprofile{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.name{
+    justify-content: left;
+}
+
+.greeting{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
