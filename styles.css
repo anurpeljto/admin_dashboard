@@ -1,8 +1,11 @@
-body {
-    padding: 0;
+html{
+    height: 100%;
     margin: 0;
-    height: 100vh;
-    width: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -14,7 +17,6 @@ span, h2 {
 .part1{
     grid-column: 1;
     padding: 20px;
-    height: 100%;
     background-color: #F49097;
 
     display: grid;
@@ -48,15 +50,6 @@ span, h2 {
     column-gap: 15px;
 }
 */
-
-.part2 {
-    grid-column: 2 / -1;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    background-color: #F2F5FF;
-}
-
 
 
 .logo-grid > * {
@@ -124,4 +117,11 @@ span, h2 {
     grid-template-columns: 2em 0.16fr;
     grid-auto-flow: row;
     gap: 10px;
+}
+
+
+.part2{
+    background-color: #F2F5FF;
+    display: grid;
+    grid-template-columns: 1fr;
 }
