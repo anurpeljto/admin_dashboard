@@ -121,7 +121,35 @@ span, h2 {
 
 
 .part2{
+    grid-column: 2;
+    padding: 20px;
     background-color: #F2F5FF;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
 }
+
+.header {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2em 2fr 0.2fr repeat(3, auto);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.search-box{
+    height: 50%;
+    background-color: #F49097;
+    border-radius: 30px;
+}
+
+.gradient-profile{
+    width: 30px;
+    height: 30px;
+    background: rgb(244,144,151);
+    background: linear-gradient(90deg, rgba(244,144,151,1) 0%, rgba(85,214,194,1) 100%); 
+    border-radius: 15px;
+}
+
